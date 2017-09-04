@@ -1,0 +1,108 @@
+/**index.wxss**/
+page {
+	height: 100%;
+}
+#container{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+}
+#gameBg{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+#gameBg image{
+  position: absolute;
+  width: 100%;
+  height: 736px;
+  left: 0;
+}
+#gamepanel{
+	margin: auto auto;
+	position: relative;
+	overflow: hidden;
+}
+.score-wrap {
+	color: #FFF;
+	/*display: none;*/
+	font-family: "Helvetica","Microsoft YaHei",sans-serif;
+	font-style: italic;
+	font-size: 17px;
+	font-weight: 700;
+	height: 32px;
+	letter-spacing: 2px;
+	padding: 7px 10px;
+	position: absolute;
+	right: 0px;
+	text-align: right;
+	text-shadow: 1.5px 0 0 #613209,-1.5px 0 0 #613209,0 1px 0 #613209,0 -1.5px 0 #613209,1px 1px 0 #613209,-1px 1px 0 #613209,1px -1px 0 #613209,-1px -1px 0 #613209;
+	top: 10px;
+	width: 105px;
+	z-index: 1005
+}
+.score-wrap span{
+  position: absolute;
+  right:40px;
+}
+.scorebg{
+  width: 105px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#btn{
+	line-height: 50px;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin: 30px 0 0 -75px;
+	width:150px;
+	height: 50px;
+	font-size: 20px;
+	z-index: 9999;
+}
+#gameOver{
+	width: 100%;
+  height: 100%;
+  position:absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+#gameOver .end{
+	width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  overflow: hidden;
+}
+.words{
+	position: absolute;
+	top:20%;
+	left: 50%;
+	margin-left:-150px;
+	width: 300px;
+	text-align: center;
+	color: #7B68EE;
+	font-size:30px;
+	z-index: 99;
+
+}
+.words span{
+	color: #DAA520;
+}
+.again{
+	width: 90px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -45px; 
+	z-index: 999
+}
+.again image{
+	width: 100%;
+	height: 40px;
+}

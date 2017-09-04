@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view id="container">
+	<!-- 游戏背景 -->
+	<view id="gameBg">
+		<image  src="../../static/img/bg2.jpg" style="top: {{bgTop1}}px" ></image>
+		<image  src="../../static/img/bg2.jpg" style="top: {{bgTop2}}px"></image>
+	</view>
+	<button type="primary" size="mini" hidden="{{isBtn}}" id="btn" bindtap="startGame" >开始游戏</button>
+	<!-- 游戏画板 -->
+	<view id="gamepanel" style="width:{{w}}px;height:{{h}}px" hidden="{{gamepanelShow}}">
+		<view class="score-wrap">
+	      <image src="../../static/img/scorebg.png" class="scorebg"></image>
+	      <span id="score">{{score}}</span>
+	    </view>
+		<canvas disable-scroll="true" canvas-id="stage" style='width:{{w}}px; height:{{h}}px;' bindtouchstart="bindtouchstart" bindtouchmove="bindtouchmove" bindtouchend="bindtouchend">
+	    </canvas>
+	</view>
+	<!-- 游戏结束 -->
+	<view id="gameOver" hidden="{{isOver}}">
+		<image class="end" src="../../static/img/endpage.png"></image>
+		<view class="words" wx:if="{{score!=0}}">您抢到了<span>{{score}}</span>个月饼</view>
+		<view class="words" wx:else>您一个月饼都没抢到</view>
+		<view class="again" bindtap="reset" >
+			<image src="../../static/img/replay.png"></image>
+		</view>
+		
+	</view>
+</view>
+
+
+
